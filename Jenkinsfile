@@ -9,7 +9,7 @@ pipeline {
         }
         stage('install') {
             steps {
-                bat 'pip install flask_Cors'
+                bat 'pip install Flask_Cors'
             }
         }
         stage('flask') {
