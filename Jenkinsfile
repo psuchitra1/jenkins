@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('python') {
             steps {
+                echo 'printing a name'
                 bat 'python updateAPI.py'
             }
         }
