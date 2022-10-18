@@ -2,14 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage ('Print') {
+        stage('python') {
             steps {
-                bat "python updateAPI.py" 
-    stages {
-        stage ('install') {
+                bat 'python updateAPI'
+            }
+        }
+        stage('install') {
             steps {
-                bat "pip install flask_cors"
-               } 
+                bat 'pip install flask_cors'
+            }
+        }
+        stage('install') {
+            steps {
+                bat 'pip install flask'
             }
         }
     }
