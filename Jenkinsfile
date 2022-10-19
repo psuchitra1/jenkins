@@ -10,7 +10,7 @@ pipeline {
         }
         stage('install') {
             steps {
-                bat 'pip3 install -U flask-cors'
+                bat 'pip install python-jenkins'
             }
         }
         stage('flask') {
